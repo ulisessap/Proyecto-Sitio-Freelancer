@@ -1,13 +1,45 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #fd0061;
+    --secundario: #6f32be;
+    --gris: #757575;
+    
+    
+
+    --fuentePrincipal: 3.8rem;
+}
+
 html{
     font-size: 62.5%;
 }
 body{
     font-size: 16px; /*1rem = 10px*/
+    font-family: 'Krub', sans-serif;
 }
-h1{
+.titulo{
     text-align: center;
-    font-size: 3.8rem;
+    font-size:3.8rem ;
 }
-span{
+.titulo span{
     font-size: 2rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto; 
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--blanco); 
+    text-decoration: none;
 }
