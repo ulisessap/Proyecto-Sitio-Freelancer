@@ -1,11 +1,13 @@
+/*Estilos para sitio freelancer*/
+
+/*
+Propiedades personalizadas*/
 :root{
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: #fd0061;
     --secundario: #6f32be;
     --gris: #757575;
-    
-    
 
     --fuentePrincipal: 3.8rem;
 }
@@ -22,10 +24,24 @@ body{
     font-size: 16px; /*1rem = 10px*/
     font-family: 'Krub', sans-serif;
 }
-.titulo{
-    text-align: center;
+
+/*Estilos de las etiquetas h1,h2 y h3*/
+h1{
     font-size:3.8rem ;
 }
+
+h2{
+    font-size:2.8rem ;
+}
+
+h3{
+    font-size:1.8rem ;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
 .titulo span{
     font-size: 2rem;
 }
@@ -33,6 +49,26 @@ body{
 .contenedor{
     max-width: 120rem;
     margin: 0 auto; 
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 768px) { 
+    .boton{
+        width: auto;
+    }
 }
 
 .nav-bg{
@@ -71,5 +107,26 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 20px;
+    position: relative;
+}
+
+.contenido-hero{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0 0 0 / 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
 }
